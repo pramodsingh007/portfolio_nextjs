@@ -8,6 +8,7 @@ import github from '@/assets/images/github.svg';
 import linkedin from '@/assets/images/linkedin.svg';
 import location from '@/assets/images/location.png';
 import shape_1 from '@/assets/images/shape_1.png';
+import {Link as ReactScroll} from 'react-scroll';
 
 
 export default function Banner() {
@@ -16,7 +17,7 @@ export default function Banner() {
     <section name={'home'}
       className=" relative grid gap-12 lg:grid-cols-2 align-middle lg:mr-20 lg:ml-20 mr-5 ml-5  mt-12 pb-6"
     >
-      <div>
+      <div >
         <div className=" lg:h-52 max-sm:h-32">
           <h1 className="lg:text-5xl md:text-5xl text-4xl font-bold">Hello I Am</h1>
           <TypeAnimation
@@ -29,7 +30,7 @@ export default function Banner() {
         </div>
         <p className=" text-slate-500 mt-3 font-medium flex">I'm a Full Stack Devloper based in <Image className=" ml-1 w-5 h-5" src={location} alt="location" width={20} height={20}/> Hyderabad,India</p>
         <div className="mt-5 space-x-3">
-        <button className="py-3 px-8 bg-yellow-400 rounded-full">Hire Me</button>
+        <ReactScroll to="contact" smooth={true} duration={1000} spy={true}><button className="py-3 px-8 bg-yellow-400 rounded-full">Hire Me</button></ReactScroll>
         <button className="py-3 px-8 duration-500 transition-all rounded-full border-2 hover:bg-[#5956e9] hover:text-white border-[#5956e9]">Download Resume</button>
         </div>
 
