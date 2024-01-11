@@ -31,7 +31,7 @@ export default function Banner() {
         <p className=" text-slate-500 mt-3 font-medium flex">I'm a Full Stack Devloper based in <Image className=" ml-1 w-5 h-5" src={location} alt="location" width={20} height={20}/> Hyderabad,India</p>
         <div className="mt-5 space-x-3">
         <ReactScroll to="contact" smooth={true} duration={1000} spy={true}><button className="py-3 px-8 bg-yellow-400 rounded-full">Hire Me</button></ReactScroll>
-        <button className="py-3 px-8 duration-500 transition-all rounded-full border-2 hover:bg-[#5956e9] hover:text-white border-[#5956e9]">Download Resume</button>
+        <Link target="_blank" href={'https://firebasestorage.googleapis.com/v0/b/file-flow-c0ae5.appspot.com/o/files%2FResume.pdf?alt=media&token=57bbcc6c-16bc-49ca-a680-f0d60ac8608e'} ><button className="py-3 px-8 duration-500 transition-all rounded-full border-2 hover:bg-[#5956e9] hover:text-white border-[#5956e9]">Download Resume</button></Link>
         </div>
 
         {/*moving ball */}

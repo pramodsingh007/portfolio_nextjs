@@ -1,5 +1,7 @@
 import Image from "next/image";
-import bookStore from "@/assets/images/book_store.jpeg";
+import fileFlow from "@/assets/images/file-flow.png";
+import docBooker from "@/assets/images/doc-booker.png";
+import vantena from "@/assets/images/vantena.png";
 import html from "@/assets/images/html.svg";
 import css from "@/assets/images/css3.svg";
 import reactjs from "@/assets/images/reactjs.svg";
@@ -34,10 +36,10 @@ function Projects() {
         <div className=" grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 md:gap-24 gap-16 lg:gap-24 mt-24 items-center max-w-[60rem]">
           
           <motion.div initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1,delay:0.3}} className=" sm:order-2 max-sm:order-2 order-none float-left sm:float-none">
-            <h1 className="lg:text-3xl md:text-3xl text-2xl font-bold ">Book Haven</h1>
+            <h1 className="lg:text-3xl md:text-3xl text-2xl font-bold ">Doc Booker</h1>
             <p>
-              book haven a place where any one can buy or sell second hand
-              books. its a olx of second hand books
+            Doctor Appointment Booking web app using the MERN stack with roles for patients, doctors, and
+administrators. Designed to simplify the appointment process for patients, doctors, and administrators.
             </p>
             <div className=" flex space-x-3 mt-4">
               <Image src={html} alt="html" width={20} height={20} />
@@ -48,19 +50,19 @@ function Projects() {
               <Image src={mongodb} alt="mongodb" width={20} height={20} />
             </div>
             <div className="mt-8 flex space-x-4">
-              <Link href={""}>
+              <Link target="_blank" href={"https://github.com/pramodsingh007/doc-booker"}>
                 <Image src={github} alt="github" width={30} height={30} />
               </Link>
-              <Link className=" hover:-rotate-45 duration-300" href={""}>
+              <Link className=" hover:-rotate-45 duration-300" target="_blank" href={"https://docbooker-5a70c.web.app/"}>
                 <Image src={arrow} alt="arrow" width={30} height={30} />
               </Link>
             </div>
           </motion.div>
           <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1,delay:0.3}} className="flex lg:justify-end md:justify-end justify-center  sm:order-1 order-none">
             <Image
-              className=" hover:scale-110 duration-500 shadow-md shadow-slate-500 "
-              src={bookStore}
-              alt="bookStore"
+              className=" hover:scale-110 duration-500 shadow-md rounded-md shadow-slate-500 "
+              src={docBooker}
+              alt="docbooker"
               width={300}
               height={300}
             />
@@ -69,10 +71,12 @@ function Projects() {
 {/* ***************************************************************************************************          */}
 
           <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1,delay:0.3}} className=" float-left sm:float-none  lg:order-3 md:order-3 sm:order-4 max-sm:order-4 ">
-            <h1 className="lg:text-3xl md:text-3xl text-2xl font-bold ">Book Haven</h1>
+            <h1 className="lg:text-3xl md:text-3xl text-2xl font-bold ">File Flow</h1>
             <p>
-              book haven a place where any one can buy or sell second hand
-              books. its a olx of second hand books
+            File flow is file sharing web application built on the MERN stack—a powerful
+combination of technologies that ensures seamless performance and a robust user experience.
+In this application anyone can upload there file and generate shareable link to download the file.
+
             </p>
             <div className=" flex space-x-3 mt-4">
               <Image src={html} alt="html" width={20} height={20} />
@@ -83,19 +87,19 @@ function Projects() {
               <Image src={mongodb} alt="mongodb" width={20} height={20} />
             </div>
             <div className="mt-8 flex space-x-4">
-              <Link href={""}>
+              <Link target="_blank" href={"https://github.com/pramodsingh007/file-flow.git"}>
                 <Image src={github} alt="github" width={30} height={30} />
               </Link>
-              <Link className=" hover:-rotate-45 duration-300" href={""}>
+              <Link className=" hover:-rotate-45 duration-300" target="_blank" href={"https://file-flow-c0ae5.web.app"}>
                 <Image src={arrow} alt="arrow" width={30} height={30} />
               </Link>
             </div>
           </motion.div>
           <motion.div initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1,delay:0.3}} className="flex lg:justify-start md:justify-start lg:order-4 md:order-4 sm:order-3 max-sm:order-3 justify-center">
             <Image
-              className=" hover:scale-110 duration-500 shadow-md shadow-slate-500 "
-              src={bookStore}
-              alt="bookStore"
+              className=" hover:scale-110 duration-500 shadow-md rounded-md shadow-slate-500 "
+              src={fileFlow}
+              alt="fileflow"
               width={300}
               height={300}
             />
@@ -106,17 +110,18 @@ function Projects() {
           <motion.div initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1,delay:0.3}} className="flex lg:justify-end md:justify-end justify-center order-none sm:order-5 max-sm:order-5">
             <Image
               className=" hover:scale-110 duration-500 shadow-md shadow-slate-500 "
-              src={bookStore}
-              alt="bookStore"
+              src={vantena}
+              alt="vantena"
               width={300}
               height={300}
             />
           </motion.div>
           <motion.div initial={{x:100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:1,delay:0.3}} className=" float-left sm:float-none order-none sm:order-6 max-sm:order-6">
-            <h1 className="lg:text-3xl md:text-3xl text-2xl font-bold ">Book Haven</h1>
+            <h1 className="lg:text-3xl md:text-3xl text-2xl font-bold ">Vantena</h1>
             <p>
-              book haven a place where any one can buy or sell second hand
-              books. its a olx of second hand books
+            Vantena is a Platform for Bussinesses and Startups,Come up with any startup idea, we will help you with best technical solution.
+            This is the  website i build for my client as a freelancer.
+            
             </p>
             <div className=" flex space-x-3 mt-4">
               <Image src={html} alt="html" width={20} height={20} />
@@ -128,10 +133,10 @@ function Projects() {
               <Image src={mongodb} alt="mongodb" width={20} height={20} />
             </div>
             <div className="mt-8 flex space-x-4">
-              <Link href={""}>
+              <Link target="_blank" href={"https://github.com/pramodsingh007/vantena"}>
                 <Image src={github} alt="github" width={30} height={30} />
               </Link>
-              <Link className=" hover:-rotate-45 duration-300" href={""}>
+              <Link className=" hover:-rotate-45 duration-300"  href={"#"}>
                 <Image src={arrow} alt="arrow" width={30} height={30} />
               </Link>
             </div>

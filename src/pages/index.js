@@ -12,12 +12,16 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 
+export const metadata = {
+    title:'pramod singh portfolio',
+    description:'this is a portfolio website for pramod singh made by pramod singh'
+}
+
 export default function Home() {
-  const scrollHandler = (e)=>{
-    console.log('scrolling')
-  }
+  
+
   return (
-    <main onScroll={scrollHandler} className=' relative overflow-hidden'>
+    <main className=' relative overflow-hidden'>
       <Header/>
       <Banner/>
       <Skills/>
